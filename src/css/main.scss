@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+$x_color: #FF0000;
+$o_color: #46C2CB;
+
+body {
+    background-color: #150050;
+}
+
+.game-board {
+    max-width: 600px;
+	height: 85vh;
+    margin: 0 auto;
+    background-color: #34495e;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.box {
+    border: 3px solid #2c3e50;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerx {
+    color: $x_color
+}
+
+.playero {
+    color: $o_color
+}
+
+.win-box {
+    background-color: black;
+}
+
+h2 {
+    font-family: 'Prosto One', cursive;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
